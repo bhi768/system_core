@@ -151,14 +151,6 @@ cc_library_static {
             exclude_shared_libs: ["libbinder", "libutils"],
         },
     },
-
-    product_variables: {
-        candy: {
-            target_init_vendor_lib: {
-                whole_static_libs: ["%s"],
-            },
-        },
-    },
 }
 
 cc_binary {
